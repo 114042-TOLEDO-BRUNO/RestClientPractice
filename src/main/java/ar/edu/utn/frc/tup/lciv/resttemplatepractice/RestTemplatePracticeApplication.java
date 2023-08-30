@@ -1,0 +1,13 @@
+package ar.edu.utn.frc.tup.lciv.resttemplatepractice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RestTemplatePracticeApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(RestTemplatePracticeApplication.class, args);
+    }
+
+}
