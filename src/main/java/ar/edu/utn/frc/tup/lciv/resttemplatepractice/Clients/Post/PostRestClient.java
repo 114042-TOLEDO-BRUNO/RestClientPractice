@@ -14,5 +14,9 @@ public class PostRestClient {
        return restTemplate.getForEntity(baseURL,PostDTO[].class);//lo declaro como array apra que interpreta la conversion a list
     }
 
+    public ResponseEntity<PostDTO> getPostById(Long id){
+        return restTemplate.getForEntity(baseURL+"/"+id,PostDTO.class);
+    }
+
 
 }
