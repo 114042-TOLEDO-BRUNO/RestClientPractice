@@ -18,7 +18,7 @@ public class PostRestClientIntegrationTest {//puede aparecer como PostRestClient
     private PostRestClient postRestClient;
 
     @Test
-    void postsIntegrationTest(){
+    void postsIntegrationTest(){//testIntegracion para ir directamente a la API
         ResponseEntity<PostDTO[]> result= postRestClient.getPosts();
         assertEquals(3, Objects.requireNonNull(result.getBody()).length);
     }
