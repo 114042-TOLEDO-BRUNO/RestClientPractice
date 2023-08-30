@@ -7,7 +7,8 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class PostRestClient {
-    RestTemplate restTemplate=new RestTemplate();
+    @Autowired
+    private RestTemplate restTemplate;
     String baseURL="https://my-json-server.typicode.com/114042-TOLEDO-BRUNO/Mock-api/posts";
 
     public ResponseEntity<PostDTO[]> getPosts(){
